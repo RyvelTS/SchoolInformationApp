@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdministratorActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28864568" />
+
+    <ImageView
+        android:id="@+id/admin_container_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline42"
+        app:srcCompat="@drawable/ic_features_container" />
+
+    <ImageView
+        android:id="@+id/admin_container_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_container_1"
+        app:srcCompat="@drawable/ic_features_container" />
+
+    <ImageView
+        android:id="@+id/admin_icon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/admin_container_1"
+        app:layout_constraintTop_toTopOf="@+id/guideline42"
+        app:srcCompat="@drawable/ic_dashicons_welcome_write_blog" />
+
+    <ImageView
+        android:id="@+id/admin_icon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/admin_container_2"
+        app:layout_constraintTop_toTopOf="@+id/admin_container_2"
+        app:srcCompat="@drawable/ic_mdi_file_edit" />
+
+    <TextView
+        android:id="@+id/admin_title_1"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/add_article_title"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/admin_container_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/admin_icon_1"
+        app:layout_constraintTop_toTopOf="@+id/admin_container_1" />
+
+    <TextView
+        android:id="@+id/admin_title_2"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/modify_article_title"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/admin_content_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/admin_icon_2"
+        app:layout_constraintTop_toTopOf="@+id/admin_container_2"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/admin_content_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/admin_note_1"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="9sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_container_1"
+        app:layout_constraintEnd_toEndOf="@+id/admin_container_1"
+        app:layout_constraintStart_toEndOf="@+id/admin_icon_1"
+        app:layout_constraintTop_toBottomOf="@+id/admin_title_1" />
+
+    <TextView
+        android:id="@+id/admin_content_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/admin_note_2"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="9sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_container_2"
+        app:layout_constraintEnd_toEndOf="@+id/admin_container_2"
+        app:layout_constraintStart_toEndOf="@+id/admin_icon_2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_title_2" />
+
+    <TextView
+        android:id="@+id/greeting_text_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/welcome_greeting"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/admin_title"
+        android:textColor="#0068AA"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_features_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_container_1"
+        app:layout_constraintEnd_toEndOf="@+id/admin_container_1"
+        app:layout_constraintStart_toStartOf="@+id/admin_container_1"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <Button
+        android:id="@+id/modify_features_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_container_2"
+        app:layout_constraintEnd_toEndOf="@+id/admin_container_2"
+        app:layout_constraintStart_toStartOf="@+id/admin_container_2"
+        app:layout_constraintTop_toTopOf="@+id/admin_container_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1025181918642",
+    "firebase_url": "https://software-engineering-pra-68da1.firebaseio.com",
+    "project_id": "software-engineering-pra-68da1",
+    "storage_bucket": "software-engineering-pra-68da1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025181918642:android:3951e929950152a881f0ab",
+        "android_client_info": {
+          "package_name": "com.rtsproject.sepractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025181918642-2q3av3ri1s0ogv8tokcq0p5vsg5jfgoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Gx-XyrHxK_MOKyveDarvIzgQIoLRY8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025181918642-2q3av3ri1s0ogv8tokcq0p5vsg5jfgoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
